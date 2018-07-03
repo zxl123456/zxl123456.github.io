@@ -63,16 +63,14 @@
 	        
 				<li><a href="/tags/随笔/">随笔</a></li>
 	        
+				<li><a href="/tags/小程序/">小程序</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -121,6 +119,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -138,12 +138,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/小程序/">小程序</a></li>
 		        
 				</ul>
 			</nav>
@@ -180,10 +182,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>小程序的申请注册就不说了，相信官方文档大家都能看明白，而且可以让人避免出错，献上官方地址<a href="https://developers.weixin.qq.com/miniprogram/dev/" target="_blank" rel="noopener">小程序申请帐号</a></p>
-<p>##小程序简介</p>
-<p>###框架<br>小程序最主要的特点就是轻量，其属于响应的书绑定视图的系统。<br>整个系统分为两块视图层（view）和逻辑层（App Service），框架将视图和数据保持同步，且当数据层发生改变时，视图层也会发生相应改变。<br>莫名的就想到了vue和react<img src="/2018/07/02/小程序知识点分享（一）/bqb1.jpg" alt=""></p>
-
+        <p>小程序的申请注册就不说了，相信官方文档大家都能看明白，而且可以让人避免出错,但是必须要提的是注册者必须清楚你的小程序属于哪个范畴，以及注册时对自己小程序的介绍不要写偏了，否则很有可能会注册失败，而且注册成功后开发者以及在小程序未发布前的体验者都需要早小程序平台设置相关权限，献上官方地址<a href="https://developers.weixin.qq.com/miniprogram/dev/" target="_blank" rel="noopener">小程序申请帐号</a><br></p>
+        
+          <a class="article-more-a" href="/2018/07/02/小程序知识点分享（一）/#more">more >></a>
+        
       
 
       
@@ -374,25 +376,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -417,19 +411,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">标签1</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">唯一的22岁</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
             
             <div class="clearfix"></div>
@@ -476,43 +466,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">作为一枚95的程序媛&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;希望认识更多的朋友</div>
   	  	
     	</section>
     
